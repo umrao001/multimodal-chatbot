@@ -1,0 +1,228 @@
+/* ==========================================================
+   GLOBAL
+========================================================== */
+
+html,
+body,
+[data-testid="stAppViewContainer"]{
+    background:linear-gradient(135deg,#f8fafc,#eef2ff,#ffffff);
+    color:#111827;
+    font-family:"Inter",sans-serif;
+}
+
+[data-testid="stHeader"]{
+    background:transparent;
+}
+
+[data-testid="stToolbar"]{
+    right:2rem;
+}
+
+[data-testid="stSidebar"]{
+    background:#ffffff;
+    border-right:1px solid #e5e7eb;
+}
+
+section[data-testid="stSidebar"]{
+    background:#ffffff;
+}
+
+/* ==========================================================
+   MAIN
+========================================================== */
+
+.main .block-container{
+    max-width:1300px;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero-card{
+    background:rgba(255,255,255,.82);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(0,0,0,.06);
+    box-shadow:0 10px 40px rgba(0,0,0,.06);
+    animation:fadeUp .8s ease;
+}
+
+.hero-title{
+    color:#111827;
+}
+
+.hero-sub{
+    color:#6b7280;
+}
+
+/* ==========================================================
+   FEATURE CARD
+========================================================== */
+
+.feature-card{
+    background:white;
+    border:1px solid #e5e7eb;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    animation:fadeUp 1s ease;
+}
+
+.feature-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 40px rgba(0,0,0,.10);
+}
+
+.feature-title{
+    color:#111827;
+}
+
+.feature-desc{
+    color:#6b7280;
+}
+
+/* ==========================================================
+   CHAT INPUT
+========================================================== */
+
+.stChatInput>div{
+    background:white;
+    border-radius:18px;
+    border:1px solid #d1d5db;
+}
+
+/* ==========================================================
+   CHAT BUBBLES
+========================================================== */
+
+.user-msg{
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:white;
+    border-radius:18px;
+    padding:18px;
+}
+
+.assistant-msg{
+    background:white;
+    color:#111827;
+    border-radius:18px;
+    padding:18px;
+    border:1px solid #e5e7eb;
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.stButton>button{
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+.stButton>button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 25px rgba(37,99,235,.25);
+}
+
+/* ==========================================================
+   FILE UPLOADER
+========================================================== */
+
+[data-testid="stFileUploader"]{
+    background:white;
+    border:2px dashed #cbd5e1;
+    border-radius:18px;
+}
+
+/* ==========================================================
+   INPUTS
+========================================================== */
+
+.stTextInput input,
+.stTextArea textarea{
+    background:white;
+    color:#111827;
+    border-radius:12px;
+}
+
+/* ==========================================================
+   METRIC
+========================================================== */
+
+[data-testid="metric-container"]{
+    background:white;
+    border-radius:16px;
+    border:1px solid #e5e7eb;
+    box-shadow:0 5px 20px rgba(0,0,0,.04);
+}
+
+/* ==========================================================
+   CODE
+========================================================== */
+
+code{
+    color:#2563eb;
+}
+
+pre{
+    border-radius:15px;
+}
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+a{
+    color:#2563eb;
+}
+
+a:hover{
+    color:#1d4ed8;
+}
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f3f4f6;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#94a3b8;
+    border-radius:20px;
+}
+
+/* ==========================================================
+   TYPING
+========================================================== */
+
+.typing span{
+    background:#7c3aed;
+}
+
+/* ==========================================================
+   ANIMATION
+========================================================== */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
